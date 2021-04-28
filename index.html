@@ -9,22 +9,20 @@
 </head>
 <body>
 
-	<p 	id="js-paragraph" style="font-size: 16px;"
-		onmouseover="this.style.fontWeight = 'bold';"
-		onmouseout="this.style.fontWeight = 'normal';">
+	<p 	id="js-paragraph" style="font-size: 16px;">
 		V elipse spí lev.
 	</p>
 	
-	<button onclick="prepniZcervenani('js-paragraph')">červené po kliknutí</button>
-	<button onclick="zvetsitPismo('#js-paragraph', 1);">větší po kliknutí</button>
+	<button class="cerveny">červené po kliknutí</button>
+	<button class="vetsi">větší po kliknutí</button>
 	
 	<h2>Audio ovladač</h2>
-	<button onclick="prehraj('#js-audio')">Prehraj</button>
-	<button onclick="pauzni('#js-audio')">Pauzni</button>
-	<button onclick="upravHlasitost('#js-audio', 0)">Ztišit</button>
-	<button onclick="upravHlasitost('#js-audio', 0.5)">Hlasitost tak akorát</button>
-	<button onclick="upravHlasitost('#js-audio', 1)">Hlasitost na maximum</button>
-	<button onclick="resetuj('#js-audio')">Nastav na začátek</button>
+	<button class="prehraj">Prehraj</button>
+	<button class="pauzni">Pauzni</button>
+	<button class="ztis">Ztišit</button>
+	<button class="middle">Hlasitost tak akorát</button>
+	<button class="max">Hlasitost na maximum</button>
+	<button class="start">Nastav na začátek</button>
 	
 	<audio id="js-audio" src="audio/dingdingdang.mp3" preload="auto"></audio>
 	
